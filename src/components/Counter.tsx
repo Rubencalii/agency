@@ -13,7 +13,7 @@ export default function Counter({ value, duration = 1200, prefix = "", suffix = 
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    let start = 0;
+  const start = 0;
     const end = value;
     if (start === end) return;
     let startTime: number | null = null;
