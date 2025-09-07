@@ -79,8 +79,11 @@ export default function Page() {
         <p className="text-lg text-muted max-w-2xl mx-auto mb-6">
           Agenda una auditoría gratuita y descubre cómo podemos escalar tus campañas con estrategias personalizadas y creatividades que convierten.
         </p>
-        <a href="/contacto" className="inline-block px-8 py-4 rounded-lg bg-accent text-black font-medium text-lg shadow-gold hover:scale-105 transition-transform">Solicita tu auditoría</a>
+  <a href="/contacto" className="inline-block px-8 py-4 rounded-lg bg-accent text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Solicita tu auditoría</a>
       </section>
+      <div className="text-center mt-10">
+        <a href="/" className="inline-block px-6 py-3 rounded-lg bg-secondary text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Volver a inicio</a>
+      </div>
     </main>
   );
 }

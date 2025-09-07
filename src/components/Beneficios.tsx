@@ -1,3 +1,4 @@
+"use client";
 import Counter from "@/components/Counter";
 const beneficios = [
   {
@@ -24,14 +25,14 @@ const beneficios = [
 
 export default function Beneficios() {
   return (
-    <section className="bg-bg py-16 border-b border-border">
+  <section className="bg-bg py-16 border-b border-border">
       <div className="max-w-[1160px] mx-auto px-6">
         <h2 className="font-serif text-3xl md:text-4xl text-accent mb-10">Beneficios & Resultados</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {beneficios.map((b) => (
             <div
               key={b.titulo}
-              className="bg-[#111112] border border-border rounded-xl p-8 shadow-gold text-center hover:scale-[1.03] transition-transform"
+              className="bg-bg border border-border rounded-xl p-8 shadow-gold text-center hover:scale-[1.03] transition-transform"
             >
               <div className="text-3xl font-bold text-accent mb-2">
                 {b.valor.match(/([+-]?\d+)/) ? (

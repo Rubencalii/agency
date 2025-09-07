@@ -35,7 +35,7 @@ export default function Servicios() {
           {servicios.map((servicio) => (
             <div
               key={servicio.titulo}
-              className="bg-[#111112] border border-border rounded-xl p-8 shadow-gold hover:scale-[1.03] transition-transform"
+              className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:scale-[1.03] transition-transform"
             >
               <div className="text-4xl mb-4">{servicio.icono}</div>
               <h3 className="font-serif text-xl text-accent mb-2">{servicio.titulo}</h3>

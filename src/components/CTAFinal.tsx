@@ -6,9 +6,9 @@ export default function CTAFinal() {
         <a href="/contacto" className="inline-block px-8 py-4 rounded-lg bg-accent text-black font-medium text-lg shadow-gold hover:scale-105 transition-transform">Agenda una llamada</a>
         <div className="mt-6 flex flex-wrap gap-4 justify-center">
           {/* Trust badges o logos de partners */}
-          <span className="bg-[#111112] border border-border rounded px-4 py-2 text-muted text-xs">GDPR Compliant</span>
-          <span className="bg-[#111112] border border-border rounded px-4 py-2 text-muted text-xs">SSL Secure</span>
-          <span className="bg-[#111112] border border-border rounded px-4 py-2 text-muted text-xs">+10 años experiencia</span>
+          <span className="bg-bg border border-border rounded px-4 py-2 text-muted text-xs">GDPR Compliant</span>
+          <span className="bg-bg border border-border rounded px-4 py-2 text-muted text-xs">SSL Secure</span>
+          <span className="bg-bg border border-border rounded px-4 py-2 text-muted text-xs">+10 años experiencia</span>
         </div>
       </div>
     </section>

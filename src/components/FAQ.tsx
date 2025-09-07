@@ -24,7 +24,7 @@ export default function FAQ() {
         <h2 className="font-serif text-3xl md:text-4xl text-accent mb-10">Preguntas Frecuentes</h2>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <details key={i} className="bg-[#111112] border border-border rounded-xl p-6 shadow-gold group">
+            <details key={i} className="bg-bg border border-border rounded-xl p-6 shadow-gold group">
               <summary className="cursor-pointer font-serif text-accent text-lg mb-2 group-open:mb-4 transition-all">{faq.pregunta}</summary>
               <p className="text-muted text-sm mt-2">{faq.respuesta}</p>
             </details>

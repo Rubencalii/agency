@@ -28,7 +28,7 @@ export default function CasosExito() {
           {casos.map((c) => (
             <div
               key={c.empresa}
-              className="bg-[#111112] border border-border rounded-xl p-8 shadow-gold hover:scale-[1.03] transition-transform"
+              className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:scale-[1.03] transition-transform"
             >
               <h3 className="font-serif text-lg text-accent mb-2">{c.empresa}</h3>
               <div className="text-muted text-sm mb-2">{c.problema}</div>

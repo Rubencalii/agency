@@ -30,7 +30,7 @@ export default function Proceso() {
           {pasos.map((p, i) => (
             <div
               key={p.titulo}
-              className="bg-[#111112] border border-border rounded-xl p-8 shadow-gold text-center relative"
+              className="bg-bg border border-border rounded-xl p-8 shadow-gold text-center relative"
             >
               <div className="text-4xl mb-4">{p.icono}</div>
               <h3 className="font-serif text-lg text-accent mb-2">{i+1}. {p.titulo}</h3>
