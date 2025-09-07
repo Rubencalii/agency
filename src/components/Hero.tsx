@@ -9,8 +9,8 @@ export default function Hero() {
           En D OR Agency ejecutamos Facebook y TikTok Ads para marcas que buscan crecimiento rentable.
         </p>
         <div className="mt-8 flex gap-3">
-          <a className="px-5 py-3 rounded-lg bg-accent text-black font-medium" href="/contacto">Agenda una llamada</a>
-          <a className="px-5 py-3 rounded-lg border border-border" href="/contacto">Auditoría gratuita</a>
+          <a className="px-5 py-3 rounded-lg bg-accent text-white font-medium hover:bg-secondary transition" href="/contacto">Agenda una llamada</a>
+          <a className="px-5 py-3 rounded-lg border border-accent text-accent hover:bg-accent hover:text-white transition" href="/contacto">Auditoría gratuita</a>
         </div>
       </div>
     </section>

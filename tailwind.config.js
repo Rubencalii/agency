@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#0B0B0C',
-        accent: '#C9A227',
-        text: '#FFFFFF',
-        muted: '#B3B6BD',
-        border: '#1A1B1E',
+        bg: '#18181B', // gris oscuro elegante
+        accent: '#4F46E5', // azul violeta moderno
+        text: '#F4F4F5', // blanco suave
+        muted: '#A1A1AA', // gris claro
+        border: '#27272A', // gris medio
+        secondary: '#F59E42', // naranja dorado para detalles
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
