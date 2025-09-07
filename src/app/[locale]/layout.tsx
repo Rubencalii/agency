@@ -9,19 +9,18 @@ import en from '../../messages/en.json';
 
 
 
-interface LocaleLayoutProps {
+
+type Props = {
   children: React.ReactNode;
   params: { locale: string };
-}
+};
 
-
-export default function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
+export default function LocaleLayout({ children, params }: Props) {
   const messagesMap = { es, en } as const;
-  type Locale = keyof typeof messagesMap;
-  const safeLocale: Locale = (locale in messagesMap ? locale : 'es') as Locale;
-  const messages = messagesMap[safeLocale];
+  const locale = params.locale as keyof typeof messagesMap;
+  const messages = messagesMap[locale] || messagesMap['es'];
   return (
-    <NextIntlClientProvider locale={safeLocale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       {children}
     </NextIntlClientProvider>
   );
