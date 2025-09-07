@@ -15,7 +15,7 @@ type Props = {
   params: { locale: string };
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
   const messagesMap = { es, en } as const;
   const locale = params.locale as keyof typeof messagesMap;
   const messages = messagesMap[locale] || messagesMap['es'];
