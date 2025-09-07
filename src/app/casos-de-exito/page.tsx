@@ -1,3 +1,4 @@
+import AnimatedCard from "@/components/AnimatedCard";
 const casos = [
   {
     empresa: "Ecommerce Moda",
@@ -27,12 +28,12 @@ export default function Page() {
   <img src="https://img.freepik.com/foto-gratis/empresario-tableta-analizando-grafico-crecimiento-virtual_53876-104051.jpg" alt="Resultados" className="rounded-xl mb-8 w-full object-cover max-h-72" />
   <div className="max-w-[1160px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         {casos.map((c) => (
-          <div key={c.empresa} className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:border-secondary transition">
+          <AnimatedCard key={c.empresa} className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:border-secondary transition">
             <h2 className="font-serif text-xl text-accent mb-2">{c.empresa}</h2>
             <div className="text-muted text-sm mb-2">{c.problema}</div>
             <div className="text-text text-sm mb-2"><span className="font-bold">Estrategia:</span> {c.estrategia}</div>
             <div className="text-secondary font-bold text-lg">{c.resultado}</div>
-          </div>
+          </AnimatedCard>
         ))}
       </div>
     </main>

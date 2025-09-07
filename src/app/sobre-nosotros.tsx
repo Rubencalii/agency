@@ -1,3 +1,4 @@
+import AnimatedCard from "@/components/AnimatedCard";
 const equipo = [
   {
     nombre: "Rubén García",
@@ -37,11 +38,11 @@ export default function Page() {
         <h2 className="font-serif text-2xl text-accent mb-4">Equipo</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {equipo.map((p) => (
-            <div key={p.nombre} className="bg-bg border border-border rounded-xl p-6 shadow-gold hover:border-secondary transition">
+            <AnimatedCard key={p.nombre} className="bg-bg border border-border rounded-xl p-6 shadow-gold hover:border-secondary transition">
               <h3 className="font-serif text-lg text-accent mb-1">{p.nombre}</h3>
               <div className="text-text font-medium mb-1">{p.rol}</div>
               <div className="text-muted text-sm">{p.bio}</div>
-            </div>
+            </AnimatedCard>
           ))}
         </div>
       </section>

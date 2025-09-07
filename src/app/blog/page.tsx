@@ -1,3 +1,4 @@
+import AnimatedCard from "@/components/AnimatedCard";
 const posts = [
   {
     titulo: "Tendencias en Facebook Ads 2025",
@@ -22,12 +23,12 @@ export default function Page() {
       <h1 className="font-serif text-3xl md:text-5xl py-12 text-center">Blog & Insights</h1>
       <div className="max-w-[900px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         {posts.map((p) => (
-          <div key={p.titulo} className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:border-secondary transition">
+          <AnimatedCard key={p.titulo} className="bg-bg border border-border rounded-xl p-8 shadow-gold hover:border-secondary transition">
             <div className="text-xs text-muted mb-2">{p.fecha}</div>
             <h2 className="font-serif text-xl text-accent mb-2">{p.titulo}</h2>
             <p className="text-text text-sm mb-2">{p.resumen}</p>
             <a href="#" className="text-secondary underline text-sm hover:text-accent transition">Leer más</a>
-          </div>
+          </AnimatedCard>
         ))}
       </div>
     </main>

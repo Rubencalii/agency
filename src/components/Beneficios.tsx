@@ -1,3 +1,4 @@
+import Counter from "@/components/Counter";
 const beneficios = [
   {
     titulo: "ROAS predecible",
@@ -32,7 +33,15 @@ export default function Beneficios() {
               key={b.titulo}
               className="bg-[#111112] border border-border rounded-xl p-8 shadow-gold text-center hover:scale-[1.03] transition-transform"
             >
-              <div className="text-3xl font-bold text-accent mb-2">{b.valor}</div>
+              <div className="text-3xl font-bold text-accent mb-2">
+                {b.valor.match(/([+-]?\d+)/) ? (
+                  <Counter
+                    value={parseInt(b.valor.match(/([+-]?\d+)/)?.[0] || "0")}
+                    prefix={b.valor.startsWith("+") || b.valor.startsWith("-") ? b.valor[0] : ""}
+                    suffix={b.valor.replace(/^[+-]?\d+/, "")}
+                  />
+                ) : b.valor}
+              </div>
               <h3 className="font-serif text-lg text-accent mb-1">{b.titulo}</h3>
               <p className="text-muted text-sm">{b.descripcion}</p>
             </div>
