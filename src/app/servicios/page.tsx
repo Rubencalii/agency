@@ -1,4 +1,5 @@
 import AnimatedCard from "@/components/AnimatedCard";
+import Link from "next/link";
 const servicios = [
   {
     titulo: "Facebook Ads",
@@ -82,7 +83,7 @@ export default function Page() {
   <a href="/contacto" className="inline-block px-8 py-4 rounded-lg bg-accent text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Solicita tu auditoría</a>
       </section>
       <div className="text-center mt-10">
-        <a href="/" className="inline-block px-6 py-3 rounded-lg bg-secondary text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Volver a inicio</a>
+        <Link href="/" className="inline-block px-6 py-3 rounded-lg bg-secondary text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Volver a inicio</Link>
       </div>
     </main>
   );

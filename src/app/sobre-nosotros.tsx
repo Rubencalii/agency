@@ -1,4 +1,5 @@
 import AnimatedCard from "@/components/AnimatedCard";
+import Link from "next/link";
 const equipo = [
   {
     nombre: "Rubén García",
@@ -55,7 +56,7 @@ export default function Page() {
         </ul>
       </section>
       <div className="text-center mt-10">
-        <a href="/" className="inline-block px-6 py-3 rounded-lg bg-secondary text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Volver a inicio</a>
+        <Link href="/" className="inline-block px-6 py-3 rounded-lg bg-secondary text-white font-medium text-lg shadow-gold hover:scale-105 transition-transform">Volver a inicio</Link>
       </div>
     </main>
   );
